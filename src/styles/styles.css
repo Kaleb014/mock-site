@@ -1,0 +1,310 @@
+:root {
+    --dark_purple: #2C2C54;
+    --purple: #474787;
+    --gray: #AAABB8;
+    --light_gray: #ECECEC;
+    --white: #ffffff;
+    --black: black;
+    --shadow: #1a1b1f;
+    --light_shadow: rgb(68, 57, 78);
+    --transparent: #ffffff77;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: #1a1b1f;
+    overflow-x: hidden;
+}
+
+html {
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+div {
+    overflow: hidden;
+}
+
+#body {
+    position: fixed;
+    background-color: #ffffff;
+    height: 92%;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.section {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    height: -o-calc(100vh - 80px); /* opera */
+    height: -webkit-calc(100vh - 80px); /* google, safari */
+    height: -moz-calc(100vh - 80px); /* firefox */
+    overflow: hidden;
+}
+
+.section-mobile {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    height: -o-calc(100vh - 80px); /* opera */
+    height: -webkit-calc(100svh - 80px); /* google, safari */
+    height: -moz-calc(100vh - 80px); /* firefox */
+    overflow: hidden;
+}
+
+.sticky {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/* Wave Animation */
+.wave {
+    position: relative;
+    width: 100%;
+    background: var(--dark_purple);
+    overflow: hidden;
+}
+.wave .air{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 100px;
+background: url('@/assets/wave.png');
+background-size: 1000px 100px
+}
+.wave .air.air1{
+animation: wave 30s linear infinite;
+opacity: 1;
+animation-delay: 0s;
+bottom: 0;
+}
+.wave .air.air2{
+animation: wave2 15s linear infinite;
+opacity: 0.5;
+animation-delay: -5s;
+bottom: 10px;
+}
+.wave .air.air3{
+animation: wave 35s linear infinite;
+opacity: 0.2;
+animation-delay: -2s;
+bottom: 15px;
+}
+.wave .air.air4{
+animation: wave2 10s linear infinite;
+opacity: 0.7;
+animation-delay: -5s;
+bottom: 20px;
+}
+.wave2 {
+position: relative;
+width: 100%;
+background: var(--dark_purple);
+overflow: hidden;
+}
+.wave2 .air{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100px;
+background: url('@/assets/wave2.png');
+background-size: 1000px 100px
+}
+.wave2 .air.air1{
+animation: wave 30s linear reverse infinite;
+opacity: 1;
+animation-delay: 0s;
+bottom: 0;
+}
+.wave2 .air.air2{
+animation: wave2 15s linear reverse infinite;
+opacity: 0.5;
+animation-delay: -5s;
+bottom: 10px;
+}
+.wave2 .air.air3{
+animation: wave 35s linear reverse infinite;
+opacity: 0.2;
+animation-delay: -2s;
+bottom: 15px;
+}
+.wave2 .air.air4{
+animation: wave2 10s linear reverse infinite;
+opacity: 0.7;
+animation-delay: -5s;
+bottom: 20px;
+}
+.wave3 {
+    position: relative;
+    width: 100%;
+    background: var(--dark_purple);
+    overflow: hidden;
+}
+.wave3 .air{
+position: absolute;
+bottom: 0;
+left: 0;
+width: 100%;
+height: 90px;
+background: url('@/assets/wave.png');
+background-size: 1000px 90px
+}
+.wave3 .air.air1{
+animation: wave 60s linear infinite;
+opacity: 1;
+animation-delay: 2s;
+bottom: 0;
+}
+.wave3 .air.air2{
+animation: wave2 30s linear infinite;
+opacity: 0.5;
+animation-delay: -15s;
+bottom: 10px;
+}
+.wave3 .air.air3{
+animation: wave 40s linear infinite;
+opacity: 0.2;
+animation-delay: -2s;
+bottom: 15px;
+}
+.wave3 .air.air4{
+animation: wave2 20s linear infinite;
+opacity: 0.7;
+animation-delay: -5s;
+bottom: 20px;
+}
+.wave4 {
+position: relative;
+width: 100%;
+background: var(--dark_purple);
+overflow: hidden;
+}
+.wave4 .air{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 90px;
+background: url('@/assets/wavesmall2.png');
+background-size: 1000px 90px;
+}
+.wave4 .air.air1{
+animation: wave 60s linear reverse infinite;
+opacity: 1;
+animation-delay: 2s;
+bottom: 0;
+}
+.wave4 .air.air2{
+animation: wave2 30s linear reverse infinite;
+opacity: 0.5;
+animation-delay: -15s;
+bottom: 10px;
+}
+.wave4 .air.air3{
+animation: wave 40s linear reverse infinite;
+opacity: 0.2;
+animation-delay: -2s;
+bottom: 15px;
+}
+.wave4 .air.air4{
+animation: wave2 20s linear reverse infinite;
+opacity: 0.7;
+animation-delay: -5s;
+bottom: 20px;
+}
+@keyframes wave{
+0%{
+    background-position-x: 0px; 
+}
+100%{
+    background-position-x: 1000px; 
+}
+}
+@keyframes wave2{
+0%{
+    background-position-x: 0px; 
+}
+100%{
+    background-position-x: -1000px; 
+}
+}
+@keyframes wave3{
+    0%{
+        background-position-x: 0px; 
+    }
+    100%{
+        background-position-x: -1000px; 
+    }
+}
+@keyframes wave4{
+    0%{
+        background-position-x: 0px; 
+    }
+    100%{
+        background-position-x: -1000px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    ::-webkit-scrollbar {
+        -webkit-appearance: none;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+::-webkit-search-cancel-button {
+    appearance: none;
+}
+
+::-webkit-input-placeholder {
+    color: var(--light_gray);
+}
+
+::-moz-placeholder {
+    color: var(--light_gray);
+}
+
+::-ms-input-placeholder {
+    color: var(--light_gray);
+}
+
+::-webkit-search-cancel-button {
+    color: var(--light_gray);
+}
+
+::-ms-clear {
+    color: var(--light_gray);
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+    height: 1em;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light_gray);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark_purple);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--purple);
+}
