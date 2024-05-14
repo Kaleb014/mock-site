@@ -35,15 +35,15 @@ onMounted(() => {
         <div class="bottom-mobile call-to-action-text-mobile">
           <div>
             <h1 class="tag-line-mobile">
-              Life can be<span class="tag-line-mobile highlight-mobile">difficult
-              </span>at times but our team is here to<span class="tag-line-mobile highlight-mobile">help!</span>
+              Lorem, ipsum dolor<span class="tag-line-mobile highlight-mobile">consectetur
+              </span>Lorem ipsum dolor sit amet consectetur adipisicing elit<span class="tag-line-mobile highlight-mobile">nemo!</span>
             </h1>
           </div>
           <link>
             <span class="call-to-action-body-mobile">
-              Our team works to integrate individual, family, and group counseling to support and 
-              sustain successful recovery from anxiety, depression, self-harm, substance use, and 
-              other maladaptive behaviors.
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati 
+              vel aliquam unde in, soluta perspiciatis esse ducimus nesciunt, numquam 
+              exercitationem cumque repudiandae blanditiis ratione nemo et quasi? Veritatis, dolore enim.
             </span>
           <div>
             <button type="button" class="consultation-button-mobile" @click="infoModal.clickButton()">Get Your Free Consultation</button>
